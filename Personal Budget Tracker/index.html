@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Budget Tracker</h1>
+
+        <!-- Income Section -->
+        <div class="form-section">
+            <h2>Add Income</h2>
+            <form id="income-form">
+                <input type="number" id="income-amount" placeholder="Income Amount" required>
+                <button type="submit">Add Income</button>
+            </form>
+        </div>
+
+        <!-- Expense Section -->
+        <div class="form-section">
+            <h2>Add Expense</h2>
+            <form id="expense-form">
+                <input type="number" id="expense-amount" placeholder="Expense Amount" required>
+                <input type="text" id="expense-description" placeholder="Expense Description" required>
+                <button type="submit">Add Expense</button>
+            </form>
+        </div>
+
+        <!-- Budget Summary -->
+        <div class="summary-section">
+            <h2>Summary</h2>
+            <p>Total Income: $<span id="total-income">0</span></p>
+            <p>Total Expenses: $<span id="total-expenses">0</span></p>
+            <p>Remaining Balance: $<span id="remaining-balance">0</span></p>
+        </div>
+
+        <!-- Savings Goal Section -->
+        <div class="form-section">
+            <h2>Savings Goal</h2>
+            <input type="number" id="savings-goal" placeholder="Set Savings Goal" required>
+            <button id="set-goal">Set Goal</button>
+            <p>Goal: $<span id="goal-amount">0</span></p>
+            <progress id="goal-progress" value="0" max="100"></progress>
+        </div>
+
+        <!-- List of Expenses -->
+        <div class="expense-list">
+            <h2>Expenses</h2>
+            <ul id="expense-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
