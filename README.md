@@ -30,13 +30,7 @@ Welcome to the **Personal Budget Tracker**, a simple and effective web app desig
 
 ---
 
-## 📸 Screenshots
 
-<p align="center">
-  <img src="your-image-link-here" alt="Personal Budget Tracker Overview" width="600px"/>
-</p>
-
----
 
 ## 🎯 How It Works
 
